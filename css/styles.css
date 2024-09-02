@@ -117,16 +117,26 @@ header nav a {
     align-items: center;
 }
 
-.info-box img {
-    width: 100%; /* Hace que la imagen ocupe todo el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+.image-container {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden; /* Asegura que la imagen no se salga del contenedor */
 }
 
-.info-box p {
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.info-text {
+    margin-top: 10px; /* Añade espacio entre la imagen y el texto */
     font-size: 18px;
     color: #1F2937;
+    text-align: center;
 }
+
 /* Quote section */
 .quote-section {
     background-color: #E5E7EB;
